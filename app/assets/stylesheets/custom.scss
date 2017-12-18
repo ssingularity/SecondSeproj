@@ -158,7 +158,49 @@ aside{
 	width: 80%;
 	height: 500px;
 	overflow: auto;
-	color: red;
+	h2{
+		color: #666;
+		text-align: left;
+		font-size: 2em;
+		font-weight: bold;
+		padding-bottom: 20px;
+		border-bottom: dashed 2px;		
+	}
+	article{
+		color: #666;
+		padding-left: 10px;
+	}
+}
+
+
+.nav-ele>li{
+	border-radius:15px;
+	line-height: 50px;
+	font-size: 1.4em;
+	display: inline;
+	list-style: none;
+	color:#666;
+	margin:20px ;
+	padding: 5px ;
+	border-bottom-width:  1px;
+	background: grey;
+	&:hover{
+		background: #aaa;
+		color: #666;
+	};
+
+}
+
+.nav-ele>li>a{
+	color: white;
+	padding:5px;
+	margin:10px ;
+	&:hover{
+		background: #aaa;
+		color: #666;
+		text-decoration: none;
+	};
+
 }
 
 .navigation{
@@ -173,11 +215,10 @@ aside{
 		border-bottom-width:  1px;
 		background: grey;
 		&:hover{
-			background: #888;
-			color: #666;
-			text-decoration: none;
-		};
-
+		background: #aaa;
+		color: #666;
+		text-decoration: none;
+	};
 	}
 	
 }
@@ -189,7 +230,7 @@ aside{
 	margin:5px ;
 	padding: 5px ;
 	&:hover{
-		background: #888;
+		background: #aaa;
 		color: #666;
 		text-decoration: none;
 	};
