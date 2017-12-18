@@ -4,11 +4,18 @@
 
 /* universal */
 header{
-	background: grey;
+	position: relative;
+	left: 11%;
+	width: 70%;
+	background: RGB(240,230,140) ;
+	.navbar-nav{
+		position: relative;
+		right: 20%;
+	}
 	.navbar-nav>li>a {
 		color : white;
 		&:hover{
-			color: #666;
+			color: RGB(255,215,0);
 			text-decoration: none;
 		}
 	}
@@ -74,7 +81,7 @@ p{
 	padding-top: 9px;
 	font-weight: bold;
 	&:hover{
-		color: #666;
+		color: RGB(255,215,0);
 		text-decoration: none;
 	}
 }
@@ -108,20 +115,7 @@ footer{
 
 $gray-medium-light: #eaeaea;
 
-@mixin box_sizing {
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-}
 
-
-.debug_dump{
-	clear: both;
-	float: left;
-	width: 100%;
-	margin-top: 45px;
-	@include box_sizing;
-}
 
 /*sidebar*/
 
@@ -159,7 +153,7 @@ aside{
 	height: 500px;
 	overflow: auto;
 	h2{
-		color: #666;
+		clor:grey;
 		text-align: left;
 		font-size: 2em;
 		font-weight: bold;
@@ -213,10 +207,9 @@ aside{
 		margin:5px ;
 		padding: 5px ;
 		border-bottom-width:  1px;
-		background: grey;
+		background:RGB(0,191,255);;
 		&:hover{
-		background: #aaa;
-		color: #666;
+		background: RGB(135,206,250);
 		text-decoration: none;
 	};
 	}
@@ -230,7 +223,6 @@ aside{
 	margin:5px ;
 	padding: 5px ;
 	&:hover{
-		background: #aaa;
 		color: #666;
 		text-decoration: none;
 	};
