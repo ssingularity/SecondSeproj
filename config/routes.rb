@@ -15,7 +15,28 @@ Rails.application.routes.draw do
   	get '/sysregu', to: 'static_pages#sysregu'
   	get '/sysconf', to: 'static_pages#sysconf'
 # Add elements
+	#backup
   	get '/compress', to: 'static_pages#compress'
+  	get '/bzip2', to: 'static_pages#bzip2'
+  	get '/bunzip2', to: 'static_pages#bunzip2'
+  	get '/ar', to: 'static_pages#ar'
+  	get '/bzip2recover', to: 'static_pages#bzip2recover'
+  	get '/unarj', to: 'static_pages#unarj'
+  	get '/tar', to: 'static_pages#tar'
+  	get '/gzexe', to: 'static_pages#gzexe'
+  	get '/uudecode', to: 'static_pages#compress'
+  	get '/unzip', to: 'static_pages#unzip'
+  	get '/uuencode', to: 'static_pages#uuencode'
+  	get '/zipinfo', to: 'static_pages#zipinfo'
+  	get '/zip', to: 'static_pages#zip'
+  	get '/restore', to: 'static_pages#restore'
+  	get '/dump', to: 'static_pages#dump'
+  	get '/cpio', to: 'static_pages#cpio'
+  	get '/gunzip', to: 'static_pages#gunzip'
+  	get '/lha', to: 'static_pages#lha'
+  	get '/gzip', to: 'static_pages#gzip'
+
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
 end

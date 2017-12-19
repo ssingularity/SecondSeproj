@@ -4,18 +4,13 @@
 
 /* universal */
 header{
-	position: relative;
-	left: 11%;
-	width: 70%;
-	background: RGB(240,230,140) ;
+	background: RGB(218,165,32) ;
 	.navbar-nav{
-		position: relative;
-		right: 20%;
 	}
 	.navbar-nav>li>a {
 		color : white;
 		&:hover{
-			color: RGB(255,215,0);
+			color: RGB(184,134,11) ;
 			text-decoration: none;
 		}
 	}
@@ -152,6 +147,7 @@ aside{
 	width: 80%;
 	height: 500px;
 	overflow: auto;
+
 	h2{
 		clor:grey;
 		text-align: left;

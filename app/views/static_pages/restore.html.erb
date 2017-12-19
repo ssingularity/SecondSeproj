@@ -1,0 +1,14 @@
+<div class="element">
+<h2>restore 命令详情</h2>
+<article > 
+                  <p> 
+﻿<strong>restore</strong>                         <br>功能说明：还原(Restore)由倾倒(Dump)操作所备份下来的文件或整个文件系统(一个分区)。<br>语　　法：<strong>restore</strong> [-cCvy][-b ][-D ][-f ][-s ] 或 <strong>restore</strong> [-chimvy][-b ][-f ][-s ] 或 <strong>restore</strong> [-crvy][-b ][-f ][-s ] 或 <strong>restore</strong> [-cRvy][-b ][-D ][-f ][-s ] 或 <strong>restore</strong> [chtvy][-b ][-D ][-f ][-s ][文件...] 或 <strong>restore</strong> [-chmvxy][-b ][-D ][-f ][-s ][文件...]<br>补充说明：<strong>restore</strong> 指令所进行的操作和dump指令相反，倾倒操作可用来备份文件，而还原操作则是写回这些已备份的文件。<br>参　　数：<br>  -b   设置区块大小，单位是Byte。<br>  -c   不检查倾倒操作的备份格式，仅准许读取使用旧格式的备份文件。<br>  -C   使用对比模式，将备份的文件与现行的文件相互对比。<br>  -D   允许用户指定文件系统的名称。<br>  -f   从指定的文件中读取备份数据，进行还原操作。<br>  -h   仅解出目录而不包括与该目录相关的所有文件。<br>  -i   使用互动模式，在进行还原操作时，<strong>restore</strong>指令将依序询问用户。<br>  -m   解开符合指定的inode编号的文件或目录而非采用文件名称指定。<br>  -r   进行还原操作。<br>  -R   全面还原文件系统时，检查应从何处开始进行。<br>  -s   当备份数据超过一卷磁带时，您可以指定备份文件的编号。<br>  -t   指定文件名称，若该文件已存在备份文件中，则列出它们的名称。<br>  -v   显示指令执行过程。<br>  -x   设置文件名称，且从指定的存储媒体里读入它们，若该文件已存在在备份文件中，则将其还原到文件系统内。<br>  -y   不询问任何问题，一律以同意回答并继续执行指令。<br>
+ </p>
+                </article>
+
+
+
+
+</div>
+
+<%=render "static_pages/navigation"%>

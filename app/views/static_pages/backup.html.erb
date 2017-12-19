@@ -2,25 +2,10 @@
 <div class="element">
 <h2>备份压缩 命令列表</h2>
 	<ul class="nav-ele">
-		<li><%=link_to "compress", compress_path%></li>
-		<li><%=link_to "compress", compress_path%></li>
-		<li><%=link_to "compress", compress_path%></li>
-		<li><%=link_to "compress", compress_path%></li>
-		<li><%=link_to "compress", compress_path%></li>
-		<li><%=link_to "compress", compress_path%></li>
-		<li><%=link_to "compress", compress_path%></li>
-		<li><%=link_to "compress", compress_path%></li>
-		<li><%=link_to "compress", compress_path%></li>
-		<li><%=link_to "compress", compress_path%></li>
-		<li><%=link_to "compress", compress_path%></li>
-		<li><%=link_to "compress", compress_path%></li>
-		<li><%=link_to "compress", compress_path%></li>
-		<li><%=link_to "compress", compress_path%></li>
-		<li><%=link_to "compress", compress_path%></li>
-		<li><%=link_to "compress", compress_path%></li>
-		<li><%=link_to "compress", compress_path%></li>
-		<li><%=link_to "compress", compress_path%></li>
-		<li><%=link_to "compress", compress_path%></li>
+		<% @elements.each do |key, value| %>
+			<li><%=link_to key, value%></li>
+		<%end%>
+
 	</ul>
 </div>
 
