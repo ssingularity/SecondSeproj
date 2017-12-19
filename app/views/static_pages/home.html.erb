@@ -1,2 +1,9 @@
-
+<div class="element">
+	<h2>所有命令 命令列表</h2>
+	<ul class="nav-ele">
+		<% @elements.each do |key, value| %>
+			<li><%=link_to key, value%></li>
+		<%end%>
+	</ul>
+</div>
 <%=render "static_pages/navigation"%>
