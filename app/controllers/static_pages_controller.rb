@@ -49,4 +49,24 @@ class StaticPagesController < ApplicationController
   		gzip: gzip_path
   	}
   end
+
+  def trans
+    @elements={
+      bye: bye_path,
+      ftp: ftp_path,
+      ftpcount: ftpcount_path,
+      ftpshut: ftpshut_path,
+      ftpwho: ftpwho_path,
+      lpd: lpd_path,
+      lpq: lpq_path,
+      lpr: lpr_path,
+      lprm: lprm_path,
+      ncftp: ncftp_path,
+      tftp: tftp_path,
+      uucico: uucico_path,
+      uucp: uucp_path,
+      uupick: uupick_path,
+      uuto: uuto_path,
+    }
+  end
 end

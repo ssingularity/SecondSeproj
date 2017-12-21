@@ -35,6 +35,22 @@ Rails.application.routes.draw do
   	get '/gunzip', to: 'static_pages#gunzip'
   	get '/lha', to: 'static_pages#lha'
   	get '/gzip', to: 'static_pages#gzip'
+  #trans
+    get '/bye', to: 'static_pages#bye'
+    get '/ftp', to: 'static_pages#ftp'
+    get '/ftpcount', to: 'static_pages#ftpcount'
+    get '/ftpshut', to: 'static_pages#ftpshut'
+    get '/ftpwho', to: 'static_pages#ftpwho'
+    get '/lpd', to: 'static_pages#lpd'
+    get '/lpq', to: 'static_pages#lpq'
+    get '/lpr', to: 'static_pages#lpr'
+    get '/lprm', to: 'static_pages#lprm'
+    get '/ncftp', to: 'static_pages#ncftp'
+    get '/tftp', to: 'static_pages#tftp'
+    get '/uucico', to: 'static_pages#uucico'
+    get '/uucp', to: 'static_pages#uucp'
+    get '/uupick', to: 'static_pages#uupick'
+    get '/uuto', to: 'static_pages#uuto'
 
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
