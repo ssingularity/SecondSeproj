@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 	root 'static_pages#home'
   	get '/help', to: 'static_pages#help' 
- 	get '/contact', to: 'static_pages#contact'
+ 	  get '/contact', to: 'static_pages#contact'
   	get '/about', to: 'static_pages#about'
   	get '/backup', to: 'static_pages#backup'
 # Add class
@@ -51,7 +51,33 @@ Rails.application.routes.draw do
     get '/uucp', to: 'static_pages#uucp'
     get '/uupick', to: 'static_pages#uupick'
     get '/uuto', to: 'static_pages#uuto'
-
+  #edit
+    get '/col', to: 'static_pages#col'
+    get '/colrm', to: 'static_pages#colrm'
+    get '/comm', to: 'static_pages#comm'
+    get '/csplit', to: 'static_pages#csplit'
+    get '/ed', to: 'static_pages#ed'
+    get '/egrep', to: 'static_pages#egrep'
+    get '/ex', to: 'static_pages#ex'
+    get '/expr', to: 'static_pages#expr'
+    get '/fgrep', to: 'static_pages#fgrep'
+    get '/fmt', to: 'static_pages#fmt'
+    get '/fold', to: 'static_pages#fold'
+    get '/grep', to: 'static_pages#grep'
+    get '/ispell', to: 'static_pages#ispell'
+    get '/jed', to: 'static_pages#jed'
+    get '/joe', to: 'static_pages#joe'
+    get '/join', to: 'static_pages#join'
+    get '/look', to: 'static_pages#look'
+    get '/mtype', to: 'static_pages#mtype'
+    get '/pico', to: 'static_pages#pico'
+    get '/rgrep', to: 'static_pages#rgrep'
+    get '/sed', to: 'static_pages#sed'
+    get '/sort', to: 'static_pages#sort'
+    get '/spell', to: 'static_pages#spell'
+    get '/tr', to: 'static_pages#tr'
+    get '/uniq', to: 'static_pages#uniq'
+    get '/wc', to: 'static_pages#wc'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 

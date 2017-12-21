@@ -66,7 +66,38 @@ class StaticPagesController < ApplicationController
       uucico: uucico_path,
       uucp: uucp_path,
       uupick: uupick_path,
-      uuto: uuto_path,
+      uuto: uuto_path
+    }
+  end
+
+  def edit
+    @elements={
+      col: col_path,
+      colrm: colrm_path,
+      comm: comm_path,
+      csplit: csplit_path,
+      ed: ed_path,
+      egrep: egrep_path,
+      ex: ex_path,
+      expr: expr_path,
+      fgrep: fgrep_path,
+      fmt: fmt_path,
+      fold: fold_path,
+      grep: grep_path,
+      ispell: ispell_path,
+      jed: jed_path,
+      joe: joe_path,
+      join: join_path,
+      look: look_path,
+      mtype: mtype_path,
+      pico: pico_path,
+      rgrep: rgrep_path,
+      sed: sed_path,
+      sort: sort_path,
+      spell: spell_path,
+      tr: tr_path,
+      uniq: uniq_path,
+      wc: wc_path,
     }
   end
 end
