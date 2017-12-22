@@ -2,7 +2,7 @@
 <div class="element">
 <h2>备份压缩 命令列表</h2>
 	<ul class="nav-ele">
-		<% @elements.each do |key, value| %>
+		<% @elements.sort_by{|u| u}.each do |key, value| %>
 			<li><%=link_to key, value%></li>
 		<%end%>
 
