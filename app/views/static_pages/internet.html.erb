@@ -1,5 +1,10 @@
 <div class="element">
 	<h2>网络通讯 所有命令</h2>
+	<ul class="nav-ele">
+		<% @elements.each do |key, value| %>
+			<li><%=link_to key, value%></li>
+		<%end%>
+	</ul>
 </div>
 
 <%=render "static_pages/navigation"%>

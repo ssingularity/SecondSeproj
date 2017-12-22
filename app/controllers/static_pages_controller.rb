@@ -100,4 +100,50 @@ class StaticPagesController < ApplicationController
       wc: wc_path,
     }
   end
+
+  def internet
+    @elements={
+      apachectl: apachectl_path,
+      arpwatch: arpwatch_path,
+      cu: cu_path,
+      dip: dip_path,
+      dnsconf: dnsconf_path,
+      efax: efax_path,
+      getty: getty_path,
+      httpd: httpd_path,
+      ifconfig: ifconfig_path,
+      mesg: mesg_path,
+      mingetty: mingetty_path,
+      minicom: minicom_path,
+      nc: nc_path,
+      netconf: netconf_path,
+      netconfig: netconfig_path,
+      netstat: netstat_path,
+      newaliases: newaliases_path,
+      ping: ping_path,
+      pppsetup: pppsetup_path,
+      pppstats: pppstats_path,
+      samba: samba_path,
+      setserial: setserial_path,
+      shapecfg: shapecfg_path,
+      smbclient: smbclient_path,
+      smbd: smbd_path,
+      statserial: statserial_path,
+      talk: talk_path,
+      tcpdump: tcpdump_path,
+      telnet: telnet_path,
+      testparm: testparm_path,
+      traceroute: traceroute_path,
+      tty: tty_path,
+      uulog: uulog_path,
+      uuname: uuname_path,
+      uustat: uustat_path,
+      uux: uux_path,
+      wall: wall_path,
+      write: write_path,
+      ytalk: ytalk_path
+         
+
+    }
+  end
 end
