@@ -1,0 +1,13 @@
+<div class="element">
+<h2>ext2ed 命令详情</h2>
+                 <article> 
+      <p> 
+﻿<strong>ext2ed</strong>                        
+<br><strong>ext2ed</strong>(ext2 file system editor)<br>功能说明：ext2文件系统编辑程序。<br>语　　法：<strong>ext2ed</strong><br>补充说明：<strong>ext2ed</strong>可直接处理硬盘分区上的数据，这指令只有Red Hat Linux才提供。<br>参　　数：<br>  一般指令<br>  setdevice[设备名称]   指定要处理的设备。<br>  disablewrite   将<strong>ext2ed</strong>设为只读的状态。<br>  enablewrite   将<strong>ext2ed</strong>设为可读写的状态。<br>  help[指令]   显示个别指令的帮助。<br>  next   移至下一个单位，单位会依目前所在的模式而异。<br>  prev   移至前一个单位，单位会依目前所在的模式而异。<br>  pgup   移至下一页。<br>  pgdn   移至上一页。<br>  set   修改目前的数据，参数会依目前所在的模式而异。<br>  writedata   在执行此指令之后，才会实际修改分区中的数据。<br>  ext2进入3种模式的指令<br>  super   进入main superblock,即Superblock模式。<br>  group   进入指定的group，即Group模式。<br>  cd   在inode模式下，进入指定的目录或文件，即Inode模式。<br>  Superblock模式<br>  gocopy   进入指定的superblock备份。<br>  setactivecopy   将目前所在的superblock，复制到main superblock。<br>  Group模式<br>  blockbitmap   显示目前groupo的区块图。<br>  inode   进入目前group的第一个inode。<br>  inodebitmap   显示目前group的inode二进制码。<br>  Inode模式<br>  dir   进入目录模式。<br>  file   进入文件模式。<br>
+</p>
+                  </article>
+
+
+</div>
+
+<%=render "static_pages/navigation"%>
