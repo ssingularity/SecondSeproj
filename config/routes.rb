@@ -67,6 +67,12 @@ Rails.application.routes.draw do
 	get '/fsck.minix', to: 'static_pages#fsck.minix'
 	get '/fsck', to: 'static_pages#fsck'
 	get '/hdparm', to: 'static_pages#hdparm'
+  #devregu
+  	get '/MAKEDEV', to: 'static_pages#MAKEDEV'
+	get '/dumpkeys', to: 'static_pages#dumpkeys'
+	get '/loadkeys', to: 'static_pages#loadkeys'
+	get '/setleds', to: 'static_pages#setleds'
+	get '/rdev', to: 'static_pages#rdev'
   #trans
     get '/bye', to: 'static_pages#bye'
     get '/ftp', to: 'static_pages#ftp'

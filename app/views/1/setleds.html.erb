@@ -1,0 +1,13 @@
+<div class="element">
+<h2>setleds 命令详情</h2>
+                 <article> 
+      <p> 
+﻿<strong>setleds</strong>                        
+<br>            　　名称：<strong>setleds</strong> <br>              　　使用权限：一般使用者 <br>              　　使用方式： <br>              　　<strong>setleds</strong> [-v] [-L] [-D] [-F] [{+|-}num] [{+|-}caps] [{+|-}scroll]说明： <br>              　　用来设定键盘上方三个 LED 的状态。在 Linux 中，每一个虚拟主控台都有独立的设定。 <br>              　　参数： <br>              　　<br>              　　-F <br>              　　预设的选项，设定虚拟主控台的状态。 <br>              　　-D <br>              　　除了改变虚拟主控台的状态外，还改变预设的状态。 <br>              　　-L <br>              　　不改变虚拟主控台的状态，但直接改变 LED 显示的状态。这会使得 LDE 显示和目前虚拟主控台的状态不符合。我们可以在稍后用 <br>              -L 且不含其它选项的 <strong>setleds</strong> 命令回复正常状态。 <br>              　　-num +num <br>              　　将数字键打开或关闭。 <br>              　　-caps +caps <br>              　　把大小写键打开或关闭。 <br>              　　-scroll +scroll <br>              　　把选项键打开或关闭。 <br>              　　范例： <br>              　　将数字键打开，其馀二个灯关闭。 <br>              　　 # <strong>setleds</strong> +num -caps -scroll <br>
+</p>
+                  </article>
+
+
+</div>
+
+<%=render "static_pages/navigation"%>
