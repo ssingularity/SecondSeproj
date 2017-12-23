@@ -1,0 +1,13 @@
+<div class="element">
+<h2>symlinks 命令详情</h2>
+                 <article> 
+      <p> 
+﻿<strong>symlinks</strong>                        
+<br><strong>symlinks</strong>(symbolic links)<br>功能说明：维护符号连接的工具程序。<br>语　　法：<strong>symlinks</strong> [-cdrstv][目录]<br>补充说明：<strong>symlinks</strong>可检查目录中的符号连接，并显示符号连接类型。以下为<strong>symlinks</strong>可判断的符号连接类型：<br>  absolute：符号连接使用了绝对路径。<br>  dangling：原始文件已经不存在。<br>  lengthy：符号连接的路径中包含了多余的"../"。<br>  messy：符号连接的路径中包含了多余的"/"。<br>  other_fs：原始文件位于其他文件系统中。<br>  relative：符号连接使用了相对路径。<br>参　　数：<br>  -c   将使用绝对路径的符号连接转换为相对路径。<br>  -d   移除dangling类型的符号连接。<br>  -r   检查目录下所有子目录中的符号连接。<br>  -s   检查lengthy类型的符号连接。<br>  -t   与-c一并使用时，会显示如何将绝对路径的符号连接转换为相对路径，但不会实际转换。<br>  -v   显示所有类型的符号连接。<br>
+</p>
+                  </article>
+
+
+</div>
+
+<%=render "static_pages/navigation"%>

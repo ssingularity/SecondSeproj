@@ -99,7 +99,62 @@ class StaticPagesController < ApplicationController
       uux: uux_path,
       wall: wall_path,
       write: write_path,
-      ytalk: ytalk_path
+      ytalk: ytalk_path,
+      dumpkeys: dumpkeys_path,
+      loadkeys: loadkeys_path,
+      setleds: setleds_path,
+      rdev: rdev_path,
+      swapoff: swapoff_path,
+      swapon: swapon_path,
+      dd: dd_path,
+      e2fsck: e2fsck_path,
+      badblocks: badblocks_path,
+      cfdisk: cfdisk_path,
+      mbadblocks: mbadblocks_path,
+      mkbootdisk: mkbootdisk_path,
+      fsconf: fsconf_path,
+      losetup: losetup_path,
+      mkfs: mkfs_path,
+      mkswap: mkswap_path,
+      sync: sync_path,
+      mkisofs: mkisofs_path,
+      sfdisk: sfdisk_path,
+      mformat: mformat_path,
+      symlinks: symlinks_path,
+      mkinitrd: mkinitrd_path,
+      mpartition: mpartition_path,
+      mkdosfs: mkdosfs_path,
+      mke2fs: mke2fs_path,
+      ext2ed: ext2ed_path,
+      fdformat: fdformat_path,
+      fdisk: fdisk_path,
+      fsck: fsck_path,
+      hdparm: hdparm_path,
+      mcd: mcd_path,
+      quota: quota_path,
+      edquota: edquota_path,
+      mdeltree: mdeltree_path,
+      pwd: pwd_path,
+      mrd: mrd_path,
+      mlabel: mlabel_path,
+      mkdir: mkdir_path,
+      mdu: mdu_path,
+      mmd: mmd_path,
+      dirs: dirs_path,
+      cd: cd_path,
+      mmount: mmount_path,
+      tree: tree_path,
+      mzip: mzip_path,
+      eject: eject_path,
+      umount: umount_path,
+      ls: ls_path,
+      mount: mount_path,
+      du: du_path,
+      stat: stat_path,
+      rmt: rmt_path,
+      rmdir: rmdir_path,
+      df: df_path,
+      lndir: lndir_path
   	}
   end
 
@@ -223,8 +278,76 @@ class StaticPagesController < ApplicationController
       wall: wall_path,
       write: write_path,
       ytalk: ytalk_path
-         
+    }
+  end
 
+  def diskregu
+    @elements={
+      mcd: mcd_path,
+      quota: quota_path,
+      edquota: edquota_path,
+      mdeltree: mdeltree_path,
+      pwd: pwd_path,
+      mrd: mrd_path,
+      mlabel: mlabel_path,
+      mkdir: mkdir_path,
+      mdu: mdu_path,
+      mmd: mmd_path,
+      dirs: dirs_path,
+      cd: cd_path,
+      mmount: mmount_path,
+      tree: tree_path,
+      mzip: mzip_path,
+      eject: eject_path,
+      umount: umount_path,
+      ls: ls_path,
+      mount: mount_path,
+      du: du_path,
+      stat: stat_path,
+      rmt: rmt_path,
+      rmdir: rmdir_path,
+      df: df_path,
+      lndir: lndir_path
+    }   
+  end
+
+  def diskmain
+    @elements={
+      swapoff: swapoff_path,
+      swapon: swapon_path,
+      dd: dd_path,
+      e2fsck: e2fsck_path,
+      badblocks: badblocks_path,
+      cfdisk: cfdisk_path,
+      mbadblocks: mbadblocks_path,
+      mkbootdisk: mkbootdisk_path,
+      fsconf: fsconf_path,
+      losetup: losetup_path,
+      mkfs: mkfs_path,
+      mkswap: mkswap_path,
+      sync: sync_path,
+      mkisofs: mkisofs_path,
+      sfdisk: sfdisk_path,
+      mformat: mformat_path,
+      symlinks: symlinks_path,
+      mkinitrd: mkinitrd_path,
+      mpartition: mpartition_path,
+      mkdosfs: mkdosfs_path,
+      mke2fs: mke2fs_path,
+      ext2ed: ext2ed_path,
+      fdformat: fdformat_path,
+      fdisk: fdisk_path,
+      fsck: fsck_path,
+      hdparm: hdparm_path,
+    }
+  end
+
+  def devregu
+    @elements={
+      dumpkeys: dumpkeys_path,
+      loadkeys: loadkeys_path,
+      setleds: setleds_path,
+      rdev: rdev_path,
     }
   end
 end

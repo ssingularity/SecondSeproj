@@ -1,0 +1,13 @@
+<div class="element">
+<h2>dumpkeys 命令详情</h2>
+                 <article> 
+      <p> 
+﻿<strong>dumpkeys</strong>                        
+<br>            　　名称: <strong>dumpkeys</strong> <br>              　　使用权限: 所有使用者 <br>              　　使用方式: <br>              　　<br>              　　 <strong>dumpkeys</strong> [ -hilfn1 -Sshape -ccharset --help --short-info <br>              　　 --long-info --numeric --full-table --separate-lines <br>              　　 --shape=shape --funcs-only --keys-only --compose-only <br>              　　 --charset=charset ] <br>              　　<br>              　　使用说明: <br>              　　<br>              　　这个命令用来将键盘的对映表写到标准输出之中，输出的格式可以被 loadkeys 命令载入。而这个表格的功能在于将键盘硬件所产生的扫描码 <br>              (scan code)，转换成 ASCII 或是任何的字串。 <br>              　　<br>              　　这是在 Linux 上特有的指令，它允许你将键盘上的按键组合，如 ctrl-a. shift-a 等转换成适当的字串。例如你可以将 <br>              alt-ctrl-f12 定义成『linux』，以后只要按下 alt-ctrl-f12 就等于输入 linux 这个字了。 <br>              　　<br>              　　要将 alt-ctrl-f12 定义成 linux 有二件事要做，首先你必需将 alt-ctrl-f12 这个按键组合定义成某个功能键，在这里我们使用 <br>              f20。 <br>              　　 control alt keycode 88 = F20 <br>              　　 <br>              　　上面的 keycode 88 便是 F12 这个键的硬件扫描码。下一步便是将 F20 这个功能键定义成 linux <br>              　　 string F20="linux" <br>              　　 <br>              　　将包括这二行的档案用 loadkeys 载入后便可以用 alt-ctrl-f12 来输入 linux 了。chdrv, yact <br>              等 console 模式中文系统便是使用这个功能来重新定义键盘。 选项: <br>              　　--shortinfo, -i <br>              　　 将一些有关 linux 键盘驱动程序的资料显示在萤幕上。这包括了硬件扫描码的范围、功能键的数量、状态键的的数量等资讯。 <br>              　　--longinfo, -l <br>              　　 <br>              　　 将键盘驱动程序的资讯用比较详尽的格式显示。 <br>              　　--numeric, -n <br>              　　 <br>              　　 使用十六进位的方式显示资料，如果没有这个选项，<strong>dumpkeys</strong> 会自动的将十六进位的内部表示法转换成文字表示法。 <br>              　　--full-table -f <br>              　　 将整个表格完整的显示，预设情况下没有被定义的组合将不会被显示。 <br>              　　<br>              　　--seperate--lines, -1 一行显示一个按键组合，预设模式下一个按键在不同状态码下的动作会被显示在同一行中。 <br>              　　<br>              　　-S,--shape=[0-3] 设定输出的格式 <br>              　　0: 预设格式(-S) <br>              　　1: 完整格式(--full-table) <br>              　　2: 单行格式(--seperate-lines) <br>              　　3: 简单格式，这个格式开始时使用完整格式，但遇到第一个没有定义的组合后就切到单行格式。 <br>              　　 <br>              　　--funcs-only <br>              　　--keys-only <br>              　　--composite-only <br>              　　 只显示部份的资料。 <br>
+</p>
+                  </article>
+
+
+</div>
+
+<%=render "static_pages/navigation"%>

@@ -1,0 +1,13 @@
+<div class="element">
+<h2>e2fsck 命令详情</h2>
+                 <article> 
+      <p> 
+﻿<strong>e2fsck</strong>                       
+ <br><strong>e2fsck</strong>(ext2 file system check)<br>功能说明：检查ext2文件系统的正确性。<br>语　　法：<strong>e2fsck</strong> [-acCdfFnprsStvVy][-b <superblock>][-B ][-l ][-L ][设备名称]<br>补充说明：<strong>e2fsck</strong>执行后的传回值及代表意义如下。<br>  0     没有任何错误发生。<br>  1     文件系统发生错误，并且已经修正。<br>  2     文件系统发生错误，并且已经修正。<br>  4     文件系统发生错误，但没有修正。<br>  8     运作时发生错误。<br>  16    使用的语法发生错误。<br>  128   共享的函数库发生错误。<br>参　　数：<br>  -a   不询问使用者意见，便自动修复文件系统。<br>  -b<superblock>   指定superblock，而不使用预设的superblock。<br>  -B   指定区块的大小，单位为字节。<br>  -c   一并执行badblocks，以标示损坏的区块。<br>  -C   将检查过程的信息完整记录在file descriptor中，使得整个检查过程都能完整监控。<br>  -d   显示排错信息。<br>  -f   即使文件系统没有错误迹象，仍强制地检查正确性。<br>  -F   执行前先清除设备的缓冲区。<br>  -l   将文件中指定的区块加到损坏区块列表。<br>  -L   先清除损坏区块列表，再将文件中指定的区块加到损坏区块列表。因此损坏区块列表的区块跟文件中指定的区块是一样的。<br>  -n   以只读模式开启文件系统，并采取非互动方式执行，所有的问题对话均设置以"no"回答。<br>  -p   不询问使用者意见，便自动修复文件系统。<br>  -r   此参数只为了兼容性而存在，并无实际作用。<br>  -s   如果文件系统的字节顺序不适当，就交换字节顺序，否则不做任何动作。<br>  -S   不管文件系统的字节顺序，一律交换字节顺序。<br>  -t   显示时间信息。<br>  -v   执行时显示详细的信息。<br>  -V   显示版本信息。<br>  -y   采取非互动方式执行，所有的问题均设置以"yes"回答。<br>
+</p>
+                  </article>
+
+
+</div>
+
+<%=render "static_pages/navigation"%>

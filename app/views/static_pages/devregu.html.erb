@@ -1,5 +1,11 @@
 <div class="element">
-	<h2>设备管理 所有命令</h2>
+	<h2>设备管理 命令列表</h2>
+	<ul class="nav-ele">
+		<% @elements.sort_by{|u| u}.each do |key, value| %>
+			<li><%=link_to key, value%></li>
+		<%end%>
+
+	</ul>
 </div>
 
 <%=render "static_pages/navigation"%>
