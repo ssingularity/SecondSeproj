@@ -1,24 +1,8 @@
-# README
+# Linux命令速查工具
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### 思路
+    我们看到很多同学在使用Linux的时候会出现忘记命令的情况，认为这里有一个命令速查的需求
+    由于Linux自己有man这样的命令，所以输入命令返回用法的需求并不大，而输入用法返回命令则比较实用
+    所以我们的项目将重点放在输入需求返回用法上
 
-Things you may want to cover:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
